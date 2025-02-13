@@ -11,6 +11,8 @@ const listInvited = ["nome@gmail.com", "nome2@gmail.com", "nome3@gmail.com", "no
 
 // chiedo all'utente di inserire la sua email
 const userEmail = prompt("Inserisci la tua email")
+console.log(userEmail);
+
 
 // creo un ciclo per chiedere al programma di controllare se l'email inserita dall'utente è presente nella mia lista o se è un imbucato
 for (let i = 0; i < listInvited.length; i++) {
