@@ -25,10 +25,11 @@ for (let i = 0; i < listInvited.length; i++) {
     }
 }
 
-// altrimenti gli diciamo che è un imbucato, perché la sua email non è presente
-
+// se l'email è presente glielo diciamo
 if (emailTrovata === true) {
     console.log("La tua email è presente");
+    
+// altrimenti gli diciamo che è un imbucato, perché la sua email non è presente
 } else {
     console.log("Ma tua email non è presente");
 }
