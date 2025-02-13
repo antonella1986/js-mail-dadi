@@ -27,5 +27,7 @@ for (let i = 0; i < listInvited.length; i++) {
   
     if (userEmail === thisEmail) {
        console.log("La tua mail è nella lista");
+    } else {
+        console.log("Spiacente, la tua mail non è nella lista");
     }
 }
