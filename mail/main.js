@@ -15,13 +15,20 @@ console.log(userEmail);
 
 
 // creo un ciclo per chiedere al programma di controllare se l'email inserita dall'utente è presente nella mia lista o se è un imbucato
+let emailTrovata = false
+
 for (let i = 0; i < listInvited.length; i++) {
     const thisEmail = listInvited[i];
     // condizione "se l'email dell'utente è presente"
     if (userEmail === thisEmail) {
-        console.log("La tua email è nella lista");
-    // altrimenti gli diciamo che è un imbucato, perché la sua email non è presente
-    } else {
-        console.log("Spiacente, la tua email non è nella lista, sei un imbucato dimmè");
+        emailTrovata = true
     }
+}
+
+// altrimenti gli diciamo che è un imbucato, perché la sua email non è presente
+
+if (emailTrovata === true) {
+    console.log("La tua email è presente");
+} else {
+    console.log("Ma tua email non è presente");
 }
