@@ -17,17 +17,20 @@ si ma noi cosa vogliamo fare?
 torniamo a scrivere in italiano
 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano" */
 
-
+// mi serve la lista delle email
 const listInvited = ["nome@gmail.com", "nome2@gmail.com", "nome3@gmail.com", "nome4@gmail.com"]
 
-const userEmail = prompt("Inserisci la tua mail")
+// devo chiedere all'utente di inserire la sua email
+const userEmail = prompt("Inserisci la tua email")
 
+// creo un ciclo per chiedere al programma di controllare se l'email inserita dall'utente è presente nella mia lista o se è un imbucato
 for (let i = 0; i < listInvited.length; i++) {
     const thisEmail = listInvited[i];
-  
+    // condizione "se l'email dell'utente è presente"
     if (userEmail === thisEmail) {
-       console.log("La tua mail è nella lista");
+        console.log("La tua email è nella lista");
+        // altrimenti gli diciamo che è un imbucato
     } else {
-        console.log("Spiacente, la tua mail non è nella lista");
+        console.log("Spiacente, la tua email non è nella lista, sei un imbucato dimmè");
     }
 }
