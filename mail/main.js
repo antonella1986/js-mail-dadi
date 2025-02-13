@@ -31,5 +31,5 @@ if (emailTrovata === true) {
     
 // altrimenti gli diciamo che è un imbucato, perché la sua email non è presente
 } else {
-    console.log("Ma tua email non è presente");
+    console.log("Spiacenti, la tua email non è presente");
 }
